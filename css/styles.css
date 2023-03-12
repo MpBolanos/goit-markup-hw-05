@@ -599,7 +599,7 @@ li.social-networks-item:hover svg {
 .icon-footer {
   fill: var(--primary-background-color);
 }
-.icon-footer-item:hover {
+.icon-footer-link:hover {
   background: var(--accent-color);
 }
 .icon-footer:hover {
