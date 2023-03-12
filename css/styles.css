@@ -237,8 +237,8 @@ body {
 
 button.close:hover {
   border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  fill: var(--primary-background-color);
+  background-color: var(--primary-background-color);
+  fill: var(--accent-color);
 }
 /*SECTION-INTRO*/
 
