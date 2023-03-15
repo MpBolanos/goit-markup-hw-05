@@ -64,7 +64,7 @@ address {
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --tertiary-background-color: #f5f4fa;
-  --transition-duration: -250ms;
+  --transition-duration: 800ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -179,19 +179,10 @@ body {
 
 /* VENTANA MODAL */
 
-.is-hidden {
-  opacity: 0;
-  visibility: visible;
-  display: none;
-  position: fixed;
+.backdrop.is-hidden {
+  visibility: hidden;
   pointer-events: none;
-  z-index: 1;
-  overflow: auto;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.452);
+  opacity: 0;
 }
 
 .backdrop {
@@ -201,13 +192,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
   opacity: 1;
-  transition: opacity var(--transition-duration) var(--timing-function);
   z-index: 1;
+  transition: opacity var(--transition-duration) var(--timing-function);
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   height: 581px;
@@ -229,6 +221,7 @@ body {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
+  padding-top: 5px;
   text-align: center;
   line-height: 24px;
   float: right;
@@ -240,6 +233,7 @@ button.close:hover {
   background-color: var(--primary-background-color);
   fill: var(--accent-color);
 }
+
 /*SECTION-INTRO*/
 
 .intro {
