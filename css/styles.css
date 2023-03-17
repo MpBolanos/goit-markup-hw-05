@@ -140,6 +140,7 @@ body {
   letter-spacing: 0.02em;
   gap: 10px;
   color: var(--secundary-text-color);
+  fill: var(--secundary-text-color);
 }
 
 .header-menu-item:not(:last-child),
@@ -229,8 +230,6 @@ body {
 }
 
 button.close:hover {
-  border-color: var(--accent-color);
-  background-color: var(--primary-background-color);
   fill: var(--accent-color);
 }
 
